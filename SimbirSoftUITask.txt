@@ -1,0 +1,20 @@
+Тест-кейс для создания клиента.
+1.Открыть сайт "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager"
+2.Нажать кнопку "Add Customer".
+3.Заполнить поля :"First Name", "Last Name", "Post code".
+4.Нажать кнопку "Add Customer".
+5.Проверить, что появилось сообщение об успешом добавлении клиента.  
+
+
+Тест-кейс для сортировки клиентов по имени.
+1.Открыть сайт "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager"
+2.Нажать кнопку "Customers"
+3.Нажать на столбец "First Name" в таблице
+4.Убедиться, что сортировка корректна 
+
+
+Тест-кейс для поиска клиента.
+1.Открыть сайт https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager
+2.Нажать кнопку "Customers".
+3.В строке "Search Customer" вводим данные, по которым будем искать клиента.
+4.Убедиться, что данные найденного клиента, совпадают с вводными данными.
