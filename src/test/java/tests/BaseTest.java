@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeMethod;
 
 import java.time.Duration;
 
+import static helpers.PropertiesProvider.getProperty;
+
 public abstract class BaseTest {
 
     public WebDriver driver;
@@ -14,7 +16,7 @@ public abstract class BaseTest {
     @BeforeMethod
     public void setup() {
         driver = new ChromeDriver();
-        driver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager");
+        driver.get(getProperty("URL"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
     }

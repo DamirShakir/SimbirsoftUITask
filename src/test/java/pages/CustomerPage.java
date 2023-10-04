@@ -55,43 +55,43 @@ public class CustomerPage {
         return this;
     }
 
-    @Step("Вставили {firstName} в поле ввода имени")
+    @Step("Вставить {firstName} в поле ввода имени")
     public CustomerPage inputFirstName(String firstName) {
         firstNameField.sendKeys(firstName);
         return this;
     }
 
-    @Step("Вставили {lastName} в поле ввода фамилии")
+    @Step("Вставить {lastName} в поле ввода фамилии")
     public CustomerPage inputLastName(String lastName) {
         lastNameField.sendKeys(lastName);
         return this;
     }
 
-    @Step("Вставили {postCode} в поле ввода почтового индекса")
+    @Step("Вставить {postCode} в поле ввода почтового индекса")
     public CustomerPage inputPostCode(String postCode) {
         postCodeField.sendKeys(postCode);
         return this;
     }
 
-    @Step("Создали клиента")
+    @Step("Создать клиента")
     public CustomerPage clickSubmitButton() {
         addSubmitButton.click();
         return this;
     }
 
-    @Step("Перешли во вкладку поиска клиента")
+    @Step("Переход во вкладку поиска клиента")
     public CustomerPage clickSearchCustomerButton() {
         searchCustomerButton.click();
         return this;
     }
 
-    @Step("Вставили {firstName} в поле поиска клиента")
+    @Step("Вставить {firstName} в поле поиска клиента")
     public CustomerPage inputSearchCustomerField(String firstName) {
         searchCustomerField.sendKeys(firstName);
         return this;
     }
 
-    @Step("Нажали кнопку сортировки")
+    @Step("Нажать кнопку сортировки")
     public CustomerPage clickSortNamesButton() {
         sortNamesButton.click();
         return this;

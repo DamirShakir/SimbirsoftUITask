@@ -31,7 +31,7 @@ public class CustomersTest extends BaseTest {
         CustomerPage customerPage = new CustomerPage(driver);
         customerPage.clickSearchCustomerButton()
                 .inputSearchCustomerField(firstName);
-        Assert.assertEquals(customerPage.getFirstNameText(), firstName);
+        Assert.assertEquals(customerPage.getFirstNameText(), firstName, "Actual and Expected Texts are different");
 
     }
 
